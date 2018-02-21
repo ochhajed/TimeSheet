@@ -1,0 +1,391 @@
+<!-- <div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="Input">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <textarea matInput placeholder="Textarea"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-select placeholder="Select">
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div> -->
+<!-- <div class="container">
+    <mat-card>
+        <form class="example-form">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Project Name">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="picker" placeholder="Choose Start date" (focus)="picker.open()">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Project Type">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="picker1" placeholder="Choose End date" (focus)="picker.open()">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Email">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field>
+                            <mat-select placeholder="Project Status">
+                                <mat-option *ngFor="let current of status" [value]="current.value">
+                                    {{ current.viewValue }}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <span matPrefix>$&nbsp;</span>
+                            <input matInput placeholder="Total Cost">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Tech Lead">
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Team Member">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <mat-icon>add_circle</mat-icon>
+                        </a>
+                        <a href="#">
+                            <mat-icon>cancel</mat-icon>
+                        </a>
+                    </td>
+                </tr>
+
+            </table>
+
+
+
+        </form>
+    </mat-card>
+
+</div> -->
+
+<!-- <div>
+    <mat-card>
+        <table>
+            <tr>
+                <td>
+                    <a href="#">
+                        <mat-icon>save</mat-icon>
+                    </a>
+                    <a href="#">
+                            <mat-icon>border_color</mat-icon>
+                    </a>
+                    <a href="#">
+                            <mat-icon>delete</mat-icon>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <mat-input-container>
+                    <textarea matInput matTextareaAutosize rows="2" placeholder="Project Notes"></textarea>
+                </mat-input-container>
+            </tr>
+        </table>
+    </mat-card>
+</div> -->
+
+<!-- <div class="container">
+    <mat-card>
+        <mat-grid-list cols="3" rowHeight="3:1" rows="5">
+            <form class="example-form" [formGroup]="projectDetailsForm">
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput 
+                            placeholder="Project Name"
+                            formControlName="projectName">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput 
+                            [matDatepicker]="picker" 
+                            placeholder="Choose Start date" 
+                            (focus)="picker.open()"
+                            formControlName="projectStartDate">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <a href="#">
+                        <mat-icon>save</mat-icon>&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a href="#">
+                        <mat-icon>border_color</mat-icon>&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a href="#">
+                        <mat-icon>delete</mat-icon>
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput placeholder="Project Type"
+                            formControlName="projectType">
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input 
+                            matInput 
+                            [matDatepicker]="picker1" 
+                            placeholder="Choose End date" 
+                            (focus)="picker.open()"
+                            formControlName="projectEndDate">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                    <mat-grid-tile></mat-grid-tile>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput 
+                            placeholder="Email"
+                            formControlName="projectEmail">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <mat-select 
+                            placeholder="Project Status"
+                            formControlName="projectStatus">
+                            <mat-option *ngFor="let current of status" [value]="current.value">
+                                {{ current.viewValue }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <span matPrefix>$&nbsp;</span>
+                        <input matInput 
+                            placeholder="Total Cost"
+                            formControlName="projectTotalCost">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput 
+                            placeholder="Tech Lead"
+                            formControlName="projectTechLead">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <textarea 
+                            matInput 
+                            placeholder="Project Notes"
+                            formControlName="projectNotes"></textarea>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput 
+                            placeholder="Team Member"
+                            formControlName="projectTeamMember">
+
+                    </mat-form-field>
+                    <a href="#">
+                        <mat-icon>add_circle</mat-icon>
+                    </a>
+                    <a href="#">
+                        <mat-icon>cancel</mat-icon>
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+
+                </mat-grid-tile>
+
+
+            </form>
+        </mat-grid-list>
+    </mat-card>
+
+</div> -->
+
+<div class="container">
+    <mat-card>
+        <mat-grid-list cols="3" rowHeight="3:1" rows="5">
+            <form class="example-form" >
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput 
+                            placeholder="Project Name"
+                            >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input matInput 
+                            [matDatepicker]="picker" 
+                            placeholder="Choose Start date" 
+                            (focus)="picker.open()"
+                            >
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <a href="#">
+                        <mat-icon>save</mat-icon>&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a href="#">
+                        <mat-icon>border_color</mat-icon>&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a href="#">
+                        <mat-icon>delete</mat-icon>
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput placeholder="Project Type"
+                            >
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <input 
+                            matInput 
+                            [matDatepicker]="picker1" 
+                            placeholder="Choose End date" 
+                            (focus)="picker.open()"
+                            >
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                    <mat-grid-tile></mat-grid-tile>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput 
+                            placeholder="Email"
+                            >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field>
+                        <mat-select 
+                            placeholder="Project Status"
+                            >
+                            <mat-option *ngFor="let current of status" [value]="current.value">
+                                {{ current.viewValue }}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <span matPrefix>$&nbsp;</span>
+                        <input matInput 
+                            placeholder="Total Cost"
+                            >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput 
+                            placeholder="Tech Lead"
+                            >
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <textarea 
+                            matInput 
+                            placeholder="Project Notes"
+                           ></textarea>
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input 
+                            matInput 
+                            placeholder="Team Member"
+                            >
+
+                    </mat-form-field>
+                    <a href="#">
+                        <mat-icon>add_circle</mat-icon>
+                    </a>
+                    <a href="#">
+                        <mat-icon>cancel</mat-icon>
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+
+                </mat-grid-tile>
+
+
+            </form>
+        </mat-grid-list>
+    </mat-card>
+
+</div>

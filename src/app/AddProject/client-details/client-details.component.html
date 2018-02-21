@@ -1,0 +1,268 @@
+<!-- <div class="container">
+        <mat-grid-list cols="2" rowHeight="1:1">
+                <mat-grid-tile>
+                        <mat-card>
+                                <form class="example-form">
+                                    <table class="example-full-width" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <mat-form-field class="example-full-width">
+                                                    <input matInput placeholder="Client Name">
+                                                </mat-form-field>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                    <mat-form-field class="example-full-width">
+                                                        <input matInput placeholder="Email">
+                                                    </mat-form-field>
+                                                </td>
+                                                
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                    <mat-form-field class="example-full-width">
+                                                        <input matInput placeholder="Phone">
+                                                    </mat-form-field>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                    <mat-form-field class="example-full-width">
+                                                        <input matInput placeholder="Skype ID">
+                                                    </mat-form-field>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                    <mat-form-field class="example-full-width">
+                                                        <input matInput placeholder="LinkedIn">
+                                                    </mat-form-field>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                    <mat-form-field class="example-full-width">
+                                                        <input matInput placeholder="Country">
+                                                    </mat-form-field>
+                                                </td>
+                                        </tr>
+                                        
+                                    </table>
+                                  
+                                    
+                                  </form>
+                            </mat-card>
+                </mat-grid-tile>
+                <mat-grid-tile>2</mat-grid-tile>
+                
+        </mat-grid-list>
+        
+</div> -->
+
+<!-- <div class="container">
+    <mat-card>
+        <mat-grid-list cols="2" rowHeight="1:1">
+            <mat-grid-tile>
+                <form class="example-form">
+                    <table class="example-full-width" cellspacing="0">
+                        <tr>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Client Name">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Email">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Phone">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Skype ID">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="LinkedIn">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Country">
+                                </mat-form-field>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </mat-grid-tile>
+            <mat-grid-tile>
+
+                <table>
+                    <tr>
+                        <td>
+                            <a href="#">
+                                <mat-icon>save</mat-icon>
+                            </a>
+                            <a href="#">
+                                <mat-icon>border_color</mat-icon>
+                            </a>
+                            <a href="#">
+                                <mat-icon>delete</mat-icon>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <mat-input-container>
+                            <textarea matInput matTextareaAutosize rows="2" placeholder="Project Notes"></textarea>
+                        </mat-input-container>
+                    </tr>
+                </table>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </mat-card>
+</div> -->
+<!-- <div class="container">
+    <mat-card>
+        <mat-grid-list cols="2" rowHeight="5:1" rows="5">
+            <form class="example-form" [formGroup]="clientDetailsForm">
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Client Name">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <a href="#">
+                        <mat-icon>save</mat-icon>&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a href="#">
+                        <mat-icon>border_color</mat-icon>&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a href="#">
+                        <mat-icon>delete</mat-icon>
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Email">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                            <span matPrefix>+1 &nbsp;</span>
+                            <input type="tel" matInput placeholder="Telephone">
+                            <mat-icon matSuffix>mode_edit</mat-icon>
+                          </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Skype ID">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="LinkedIn">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <textarea matInput placeholder="Leave a comment"></textarea>
+                      </mat-form-field>
+                    </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Country">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                </mat-grid-tile>
+
+            </form>
+        </mat-grid-list>
+    </mat-card>
+
+</div> -->
+
+<div class="container">
+    <mat-card>
+        <mat-grid-list cols="2" rowHeight="5:1" rows="5">
+            <form class="example-form" >
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Client Name">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <a href="#">
+                        <mat-icon>save</mat-icon>&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a href="#">
+                        <mat-icon>border_color</mat-icon>&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a href="#">
+                        <mat-icon>delete</mat-icon>
+                    </a>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Email">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                            <span matPrefix>+1 &nbsp;</span>
+                            <input type="tel" matInput placeholder="Telephone">
+                            <mat-icon matSuffix>mode_edit</mat-icon>
+                          </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Skype ID">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="LinkedIn">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <textarea matInput placeholder="Leave a comment"></textarea>
+                      </mat-form-field>
+                    </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Country">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                </mat-grid-tile>
+
+            </form>
+        </mat-grid-list>
+    </mat-card>
+
+</div>
